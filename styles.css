@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4e73df, #1c3d78); /* Deep blue gradient */
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to right, #2e6dbf, #1f4b8d); /* Darker blue gradient */
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4; /* Light text for readability */
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Subtle overlay to enhance contrast */
+}
+
+.image-container img {
+    width: 250px;
+}
+
+.highlight-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.about {
+    text-align: center;
+    padding: 20px;
+    background: #a3c9f1; /* Light blue background */
+    border-radius: 10px; /* Added rounded corners for a soft look */
+}
+
+.highlight {
+    background: #2beaff; /* Warm gold for the highlight */
+    color: #2c3e50; /* Dark text for contrast */
+    padding: 10px;
+    display: inline-block;
+}
+
+.services {
+    background: #34495e; /* Muted dark gray-blue */
+    padding: 30px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+}
+
+.pricing {
+    text-align: center;
+    padding: 30px;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package {
+    background: #2980b9; /* Strong blue */
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+    /* Add margin-top for different heights */
+}
+
+.package:nth-child(1) {
+    margin-top: 0; /* Left package: no margin */
+}
+
+.package:nth-child(2) {
+    margin-top: 20px; /* Middle package: slightly lower */
+}
+
+.package:nth-child(3) {
+    margin-top: 40px; /* Right package: lower than the middle one */
+}
+
+footer {
+    background: #2c3e50; /* Dark gray-blue */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+}
